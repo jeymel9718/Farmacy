@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pedidos"
+            android:icon="@drawable/ic_menu_pedidos"
+            android:title="Mis Pedidos" />
+        <item
+            android:id="@+id/nav_sucursales"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Sucursales" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Historial Medico" />
+    </group>
+
+    <item android:title="Cuenta">
+        <menu>
+            <item
+                android:id="@+id/nav_acount"
+                android:icon="@drawable/ic_menu_person"
+                android:title="Configurar" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_menu_highlight_off"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>

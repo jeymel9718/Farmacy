@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ic_receta"
+        android:layout_width="124dp"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/side_nav_bar_bk" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Numero Receta"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="12pt" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Contenido Receta"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_button1"
+            android:backgroundTint="@color/decline"
+            android:text="Borrar"
+            android:textSize="7pt" />
+
+        <View
+            android:layout_width="249dp"
+            android:layout_height="1dp"
+            android:background="#ffd5d5d5"></View>
+
+    </LinearLayout>
+
+</LinearLayout>

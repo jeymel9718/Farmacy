@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jeison.farmacy.HistorialFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="453dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/history_item" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addHis"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_below="@+id/list"
+            android:layout_alignRight="@+id/list"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_menu_add" />
+    </RelativeLayout>
+</FrameLayout>
